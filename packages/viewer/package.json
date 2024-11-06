@@ -1,0 +1,28 @@
+{
+  "name": "@lhci/viewer",
+  "version": "0.1.0",
+  "license": "Apache-2.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/GoogleChrome/lighthouse-ci.git"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "clean": "rm -rf ./dist",
+    "start": "npm run build:watch",
+    "build": "node ../../scripts/build-app.js build ./src/ui/index.html ./dist ./",
+    "build:watch": "node ../../scripts/build-app.js watch ./src/ui/index.html ./dist ./"
+  },
+  "devDependencies": {
+    "clsx": "^1.0.4",
+    "preact": "^10.0.1",
+    "@fontsource/material-icons": "^4.4.5",
+    "@fontsource/roboto": "^4.4.5",
+    "@fontsource/roboto-mono": "^4.4.5"
+  },
+  "alias": {
+    "isomorphic-fetch": "clsx"
+  }
+}

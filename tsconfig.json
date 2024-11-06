@@ -1,0 +1,30 @@
+{
+  "compilerOptions": {
+    "noEmit": true,
+    "module": "commonjs",
+    "target": "ES2021",
+    "lib": ["ES2021"],
+    "allowJs": true,
+    "checkJs": true,
+    "strict": true,
+    "useUnknownInCatchVariables": false,
+
+    "skipLibCheck": true,
+
+    "jsx": "react",
+    "jsxFactory": "h",
+    "jsxFragmentFactory": "Fragment",
+    "resolveJsonModule": true,
+    "esModuleInterop": true,
+    "diagnostics": true
+  },
+  "include": [
+    "packages/*/src/**/*.js",
+    "types/**/*.ts",
+    "packages/*/src/**/*.jsx",
+    "scripts/*.js",
+    "packages/server/test/api/*.js",
+    "packages/server/test/e2e/**/*.js",
+    "packages/viewer/test/**/*.js"
+  ]
+}
